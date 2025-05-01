@@ -1,0 +1,44 @@
+dictionary={
+    'name':'Nabeel',
+    'roll no':91,
+    'section':'C',
+    'degree':'BBA',
+    'university':'COMSATS',
+    'gpa':3,
+    'subject 1':'Programming',
+    'subject 2':'Psychology',
+    'subject 3':'Marketing',
+    'subject 4':'Accounting'
+    }
+print(dictionary)
+# accessing a value from dictionary
+print(dictionary['name'])
+# get all keys from dictionary
+print(dictionary.keys())
+# get all values from dictioanry
+print(dictionary.values())
+# get all key value pairs
+print(dictionary.items())
+# check if key exists in dictionary
+print('subject 1' in dictionary)
+# avoid error mistake
+print(dictionary.get('subject 6', 'Not found'))
+# pop up the key
+removed_value=dictionary.pop('gpa')
+print(dictionary.items())
+# length of a dictionary
+print(len(dictionary))
+# add new key value pairs
+dictionary['age']=19
+print(dictionary)
+# modyfying values
+dictionary['age']=18
+print(f"the age is now {dictionary['age']}.")
+# removing key values
+del dictionary['age']
+print(dictionary)
+# clear the dictionary
+dictionary.clear()
+print(dictionary)
+
+
